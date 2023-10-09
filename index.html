@@ -15,93 +15,246 @@
     </header>
     <aside>
         <ul class="menu-items">
-            <li class="menu-item"><a href="#flex">display</a></li>
-            <li class="menu-item"><a href="#direction">direction</a></li>
-            <li class="menu-item">flex-wrap</li>
-            <li class="menu-item">display</li>
-            <li class="menu-item">flex-direction</li>
-            <li class="menu-item">flex-wrap</li>
-            <li class="menu-item">display</li>
-            <li class="menu-item">flex-direction</li>
-            <li class="menu-item">flex-wrap</li>
-            <li class="menu-item">display</li>
-            <li class="menu-item">flex-direction</li>
-            <li class="menu-item">flex-wrap</li>
-            <li class="menu-item">display</li>
-            <li class="menu-item">flex-direction</li>
-            <li class="menu-item">flex-wrap</li>
-            <li class="menu-item">display</li>
-            <li class="menu-item">flex-direction</li>
-            <li class="menu-item">flex-wrap</li>
-            <li class="menu-item">display</li>
-            <li class="menu-item">flex-direction</li>
-            <li class="menu-item">flex-wrap</li>
-            <li class="menu-item">display</li>
-            <li class="menu-item">flex-direction</li>
-            <li class="menu-item">flex-wrap</li>
+            <li class="menu-item"><a href="#display">display</a></li>
+            <li class="menu-item"><a href="#direction">flex-direction</a></li>
+            <li class="menu-item"><a href="#flex-wrap">flex-wrap</a></li>
+            <li class="menu-item"><a href="#flex-flow">flex-flow</a></li>
+            <li class="menu-item"><a href="#order">order</a></li>
+            <li class="menu-item"><a href="#justify-content">justify-content</a></li>
+            <li class="menu-item"><a href="#align-items">align-items</a></li>
+            <li class="menu-item"><a href="#align-self">align-self</a></li>
+            <li class="menu-item"><a href="#align-content">align-content</a></li>
+            <li class="menu-item"><a href="#flex-grow">flex-grow</a></li>
+            <li class="menu-item"><a href="#flex-shrink">flex-shrink</a></li>
+            <li class="menu-item"><a href="#flex-basis">flex-basis</a></li>
+            <li class="menu-item"><a href="#flex">flex</a></li>
+            <li class="menu-item"><a href="#gap">gap</a></li>
+            <li class="menu-item"><a href="#order">order</a></li>
         </ul>
     </aside>
     <main>
        <section>
-        <div class="container">
-            <h2>direction</h2>
-            <p>
-                <code>
-                    display : flex ;
-                </code>
-            </p>
-           <article>
-            <div class="output flex">
-                <div class="output-box f">f</div>
-                <div class="output-box l">l</div>
-                <div class="output-box e">e</div>
-                <div class="output-box x">x</div>
-                <div class="output-box slash">-</div>
-                <div class="output-box b">b</div>
-                <div class="output-box o">o</div>
-                <div class="output-box x">x</div>
+        <div class="container" id="display">
+            <h2>display</h2>
+            <div class="wrapper">
+                <div class="main-wrapper">
+                    <p>
+                        <code>
+                            display : flex ;
+                        </code>
+                    </p>
+                   <article>
+                    <div class="output flex">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+               <div class="extra-wrapper">
+                <p>
+                    <code>
+                        display : inline-flex ;
+                    </code>
+                    </p>
+                   <article>
+                    <div class="output inline-flex">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+               </div>
             </div>
-           </article>
         </div>
         <div class="container" id="direction">
             <h2>direction</h2>
-            <p>
-                <code>
-                    display : flex ;
-                </code>
-            </p>
-           <article>
-            <div class="output flex">
-                <div class="output-box f">f</div>
-                <div class="output-box l">l</div>
-                <div class="output-box e">e</div>
-                <div class="output-box x">x</div>
-                <div class="output-box slash">-</div>
-                <div class="output-box b">b</div>
-                <div class="output-box o">o</div>
-                <div class="output-box x">x</div>
+            <div class="wrapper">
+                <div class="main-wrapper">
+                    <p>
+                        <code>
+                            display : flex ;
+                            flex-direction : row;
+                        </code>
+                    </p>
+                   <article>
+                    <div class="output flex row">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+               <div class="extra-wrapper">
+                <p>
+                    <code>
+                        display : flex ;
+                        flex-direction : column;
+                    </code>
+                    </p>
+                   <article>
+                    <div class="output flex column">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+               </div>
+               <div class="extra-wrapper">
+                <p>
+                    <code>
+                        display : flex ;
+                        flex-direction : row-reverse;
+                    </code>
+                    </p>
+                   <article>
+                    <div class="output flex row-rev">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+               </div>
+               <div class="extra-wrapper">
+                <p>
+                    <code>
+                        display : flex ;
+                        flex-direction : column-reverse;
+                    </code>
+                    </p>
+                   <article>
+                    <div class="output flex col-rev">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+               </div>
             </div>
-           </article>
         </div>
-        <div class="container" id="flex"">
-            <h2>direction</h2>
-            <p>
-                <code>
-                    display : flex ;
-                </code>
-            </p>
-           <article>
-            <div class="output flex">
-                <div class="output-box f">f</div>
-                <div class="output-box l">l</div>
-                <div class="output-box e">e</div>
-                <div class="output-box x">x</div>
-                <div class="output-box slash">-</div>
-                <div class="output-box b">b</div>
-                <div class="output-box o">o</div>
-                <div class="output-box x">x</div>
+        <div class="container" id="flex-wrap">
+            <h2>flex-wrap</h2>
+            <div class="wrapper">
+                <div class="main-wrapper">
+                    <p>
+                        <code>
+                            display : flex ;
+                            flex-wrap: wrap;
+                        </code>
+                    </p>
+                   <article>
+                    <div class="output flex wrap gap-20">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+               <div class="extra-wrapper">
+                <p>
+                    <code>
+                        display : flex ;
+                    </code>
+                    </p>
+                   <article>
+                    <div class="output flex no-wrap gap-20">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+               </div>
             </div>
-           </article>
+        </div>
+        <div class="container" id="flex-flow">
+            <h2>flex-flow : flex-direction flex-wrap</h2>
+            <div class="wrapper">
+                <div class="main-wrapper">
+                    <p>
+                        <code>
+                            display : flex ;
+                            flex-flow: column wrap;
+                        </code>
+                    </p>
+                   <article>
+                    <div class="output flex flex-flow max-200">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="flex-flow">
+            <h2>flex-flow : flex-direction flex-wrap</h2>
+            <div class="wrapper">
+                <div class="main-wrapper">
+                    <p>
+                        <code>
+                            display : flex ;
+                            flex-flow: column wrap;
+                        </code>
+                    </p>
+                   <article>
+                    <div class="output flex flex-flow max-200">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+            </div>
         </div>
        </section>
     </main>

@@ -31,6 +31,7 @@ body *::-webkit-scrollbar {
   }
   p{
     font-size: 20px;
+    margin-bottom: 10px;
   }
   a{
     all: unset;
@@ -55,14 +56,14 @@ aside{
     padding: 0 2%;
     direction: rtl;
     overflow: auto;
-    height: 400px;
+    height: 60vh;
 }
 main{
     flex-basis: 70%;
     display: flex;
     justify-content: center;
     padding: 4px 2%;
-    max-height: 400px;
+    max-height: 60vh;
     overflow: hidden;
 }
 
@@ -107,7 +108,6 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-height: 400px;
     overflow: scroll;
     gap: 65px;
 }
@@ -116,16 +116,15 @@ article{
     flex-basis: 70%;
     border-radius: 10px;
     padding: 2%;
-    max-height: 400px;
+    max-height: 200px;
+    overflow: auto;
 }
 .output{
     background: linear-gradient(0deg, rgba(251,255,73,0.4458377100840336) 85%, rgba(192,255,70,0.4542410714285714) 100%);
     border: 1px dashed red;
+    overflow: auto;
 }
-.flex{
-    display: flex;
-    flex-wrap: nowrap;
-}
+
 .output-box{
     width: clamp(1rem,6vw , 3rem);
     height: clamp(1rem,6vw , 3rem);
@@ -141,9 +140,48 @@ article{
 .container{
     display: flex;
     flex-direction: column;
-    height: 100%;
-    gap: 2%;
-    min-height: 364px;
+    gap: 20px;
     justify-content: space-between;
     padding: clamp(5px,2vw ,20px );
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    min-height: 294px;
+}
+
+.flex{
+    display: flex;
+}
+
+.inline-flex{
+    display: inline-flex;
+}
+.row{
+    flex-direction: row;
+}
+.column{
+    flex-direction: column;
+}
+.row-rev{
+    flex-direction: row-reverse;
+}
+.col-rev{
+    flex-direction: column-reverse;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.gap-20{
+    gap: 3rem;
+}
+.flex-flow{
+    flex-flow: column wrap;
+}
+.max-200{
+    max-height: 200px;
 }

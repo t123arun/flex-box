@@ -188,11 +188,11 @@
                <div class="extra-wrapper">
                 <p>
                     <code>
-                        display : flex ;
+                        display : flex ; <i> default(flex-wrap : nowrap;) </i>
                     </code>
                     </p>
                    <article>
-                    <div class="output flex no-wrap gap-20">
+                    <div class="output flex  gap-20">
                         <div class="output-box f">f</div>
                         <div class="output-box l">l</div>
                         <div class="output-box e">e</div>
@@ -231,18 +231,432 @@
                 </div>
             </div>
         </div>
-        <div class="container" id="flex-flow">
-            <h2>flex-flow : flex-direction flex-wrap</h2>
+        <div class="container" id="order">
+            <h2>order</h2>
+            <div class="wrapper">
+                <div class="main-wrapper">
+                    <p>
+                    parent : display : flex ;
+                    </p>
+                    <p>
+                    |
+                    </p>
+                    <p>
+                    child(f,l,e,x) : order : 2    
+                    </p>
+                   <article>
+                    <div class="output flex">
+                        <div class="output-box f order-2">f</div>
+                        <div class="output-box l order-2">l</div>
+                        <div class="output-box e order-2">e</div>
+                        <div class="output-box x order-2">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="justify-content">
+            <h2>justify-content</h2>
+            <div class="wrapper">
+                <div class="main-wrapper">
+                    <p>
+                        display : flex; <i>  default ( justify-content : flex-start; )</i>
+                    </p>
+                   <article>
+                    <div class="output flex ">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+                <div class="main-wrapper">
+                    <p>
+                        display : flex; justify-content : flex-end;
+                    </p>
+                   <article>
+                    <div class="output flex justify-flex-end">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+                <div class="main-wrapper">
+                    <p>
+                        display : flex; justify-content : center;
+                    </p>
+                   <article>
+                    <div class="output flex justify-flex-center">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+                <div class="main-wrapper">
+                    <p>
+                        display : flex; justify-content : space-between;
+                    </p>
+                   <article>
+                    <div class="output flex justify-flex-space-bw">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+                <div class="main-wrapper">
+                    <p>
+                        display : flex; justify-content : flex-around;
+                    </p>
+                   <article>
+                    <div class="output flex justify-flex-space-around">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+                <div class="main-wrapper">
+                    <p>
+                        display : flex; justify-content : flex-evenly;
+                    </p>
+                   <article>
+                    <div class="output flex justify-flex-space-evenly">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="align-items">
+            <h2>align-items</h2>
+            <div class="wrapper">
+                <div class="main-wrapper">
+                    <p>
+                        display : flex; <i>  default ( align-items : stretch )</i>
+                    </p>
+                   <article>
+                    <div class="output flex height-100 ">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+                <div class="main-wrapper">
+                    <p>
+                        display : flex; align-items: flex-start / self-start ;
+                    </p>
+                   <article>
+                    <div class="output flex height-100 align-items-start">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+                <div class="main-wrapper">
+                    <p>
+                        display : flex; align-items : end / self-end;
+                    </p>
+                   <article>
+                    <div class="output flex height-100 align-items-end">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+                <div class="main-wrapper">
+                    <p>
+                        display : flex; align-items : center;
+                    </p>
+                   <article>
+                    <div class="output flex height-100 align-items-center">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+                <div class="main-wrapper">
+                    <p>
+                        display : flex; align-items : baseline;
+                    </p>
+                   <article>
+                    <div class="output flex height-100 align-items-baseline">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="align-self">
+            <h2>align-self</h2>
+            <div class="wrapper">
+                <div class="main-wrapper">
+                    <p>parent : display : flex; <i>  default ( align-items : stretch )</i>
+                    </p>
+                    <p>|</p>
+                    <p>Child : align-self : stretch <i>// default flex-stretch</i></p>
+                   <article>
+                    <div class="output height-100 flex ">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x ">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div><div class="main-wrapper mt-20">
+                    <p>Child : align-self : flex-start</i></p>
+                   <article>
+                    <div class="output height-100 flex align-self-start">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x ">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+                <div class="main-wrapper mt-20">
+                    <p>Child : align-self : flex-end</p>
+                   <article>
+                    <div class="output height-100 flex align-self-end">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x ">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+                <div class="main-wrapper mt-20">
+                    <p>Child : align-self : center</p>
+                   <article>
+                    <div class="output height-100 flex align-self-center">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x ">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+                <div class="main-wrapper mt-20">
+                    <p>Child : align-self : baseline</p>
+                   <article>
+                    <div class="output height-100 flex align-self-baseline">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x ">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="align-content">
+            <h2>align-content</h2>
+            <p>Works when : flex-wrap  : wrap | wrap-reverse<i></i></p>
             <div class="wrapper">
                 <div class="main-wrapper">
                     <p>
                         <code>
                             display : flex ;
-                            flex-flow: column wrap;
+                            flex-wrap : wrap;
+                            align-content : stretch <i>by default</i>;
                         </code>
                     </p>
-                   <article>
-                    <div class="output flex flex-flow max-200">
+                   <article class="h-300">
+                    <div class="output flex wrap gap-20 h-full w-half">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+                <div class="main-wrapper">
+                    <p>
+                        <code>
+                            display : flex ;
+                            flex-wrap : wrap;
+                            align-content : flex-start;
+                        </code>
+                    </p>
+                   <article class="h-300">
+                    <div class="output flex wrap gap-20 h-full align-content-start w-half">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+                <div class="main-wrapper">
+                    <p>
+                        <code>
+                            display : flex ;
+                            flex-wrap : wrap;
+                            align-content : flex-end;
+                        </code>
+                    </p>
+                   <article class="h-300">
+                    <div class="output flex wrap gap-20 h-full align-content-end w-half">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+                <div class="main-wrapper">
+                    <p>
+                        <code>
+                            display : flex ;
+                            flex-wrap : wrap;
+                            align-content : center;
+                        </code>
+                    </p>
+                   <article class="h-300">
+                    <div class="output flex wrap gap-20 h-full align-content-center w-half">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+                <div class="main-wrapper">
+                    <p>
+                        <code>
+                            display : flex ;
+                            flex-wrap : wrap;
+                            align-content : space-between;
+                        </code>
+                    </p>
+                   <article class="h-300">
+                    <div class="output flex wrap gap-20 h-full align-content-spacebw w-half">
+                        <div class="output-box f">f</div>
+                        <div class="output-box l">l</div>
+                        <div class="output-box e">e</div>
+                        <div class="output-box x">x</div>
+                        <div class="output-box slash">-</div>
+                        <div class="output-box b">b</div>
+                        <div class="output-box o">o</div>
+                        <div class="output-box x">x</div>
+                    </div>
+                   </article>
+                </div>
+                <div class="main-wrapper">
+                    <p>
+                        <code>
+                            display : flex ;
+                            flex-wrap : wrap;
+                            align-content : space-evenly;
+                        </code>
+                    </p>
+                   <article class="h-300">
+                    <div class="output flex wrap gap-20 h-full align-content-spaceEvenly w-half">
                         <div class="output-box f">f</div>
                         <div class="output-box l">l</div>
                         <div class="output-box e">e</div>
